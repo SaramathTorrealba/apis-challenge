@@ -1,0 +1,39 @@
+body {
+  background-color: #212529;
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  text-align: center;
+}
+.flex-child {
+  background-color: #6c757d;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+input, button, select{
+  width: 17rem;
+  font-size: 1rem;
+  text-align: center;
+  height: 2rem;
+  color: black;
+  border-radius: 6px;
+}
+
+.aling-bp, h3, .aling-h1{
+  text-align: center;
+}
+button{
+  background-color: #31d2f2;
+  border-color: #3c90a4;
+  margin-top: 1rem;
+  color: white;
+}
+hr{
+width: 28rem;
+border-color: #1e3941;
+}
