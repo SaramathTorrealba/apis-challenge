@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apis.</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+  </head>
+  <body>
     <main>
-        <hr>
-            <h1 class="header">Conversor de monedas Nacional</h1>
-        <hr>
-        <div class="container">
-            <div class="flex-child">
-                <h1 class="aling-h1">Pesos CLP</h1>
-                <input type="text" placeholder="Ingrese el monto en CLP">
-                <h3>Moneda a convertir</h3>
-                <select name="Monedas" id="">
-                    <option value="Selection">Selecciona Moneda</option>
-                    <option value="dolar">Dolar</option>
-                    <option value="euro">Euro</option>
-                    <option value="won">Won surcoreano</option>
-                </select>
-                <div class="aling-bp">
-                    <button>Buscar</button>
-                    <p>...</p>
-                </div>
-            </div>
+      <hr />
+      <h1 class="header">Conversor de monedas Nacional</h1>
+      <hr />
+      <div class="container">
+        <div class="flex-child">
+          <h1 class="aling-h1">Pesos CLP</h1>
+          <input id="inputChange"type="text" placeholder="Ingrese el monto en CLP" />
+          <h3>Moneda a convertir</h3>
+          <select name="Monedas" id="currency">
+            <option value="Selection">Selecciona Moneda</option>
+            <option value="dolar">Dolar</option>
+            <option value="euro">Euro</option>
+            <option value="uf">Uf</option>
+          </select>
+          <div class="aling-bp">
+            <button onclick="calculate()">Buscar</button>
+            <p id="result">...</p>
+          </div>
         </div>
+      </div>
+
+    <div class="canvas">
+      <canvas id="myChart" ></canvas>
+    </div>
     </main>
     <script src="./assets/js/index.js"></script>
-</body>
+   
+  </body>
 </html>
